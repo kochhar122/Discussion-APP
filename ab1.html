@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="icons/css/all.mi.n.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #first {
+      background-color: #008080;
+      color: white;
+      width: 98%;
+      padding: 10px;
+    }
+
+    #lb {
+      margin-left: 5px;
+      font-size: 2rem;
+    }
+
+    #second {
+      display: flex;
+    }
+
+    #left {
+      height: 150vh;
+      width: 40%;
+      background-color: #f5f5f5;
+    }
+
+    #one {
+      padding: 10px;
+      border: 1px #d6d6d6 solid;
+    }
+
+    #two {
+      cursor: pointer;
+      background-color: #f5f5f5;
+      border: 1px #d6d6d6 solid;
+    }
+
+    #find {
+      padding: 5px;
+      margin-left: 50px;
+      width: 40%;
+      border: 1px solid lightgrey;
+    }
+
+    #new {
+      background-color: #0069d9;
+      margin-left: 30px;
+      color: white;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+    }
+
+    h1 {
+      margin-left: 55px;
+      font-size: 19px;
+
+      margin-top: 15px;
+    }
+
+    h4 {
+      margin-top: 10px;
+      margin-left: 55px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    textarea {
+      display: block;
+      margin-top: 5px;
+      height: 15%;
+      width: 85%;
+      margin-left: 50px;
+      padding-left: 5px;
+      padding-top: 5px;
+      font-family: "Courier New", Courier, monospace;
+      font-weight: bold;
+      overflow: hidden;
+    }
+
+    input {
+      margin-left: 50px;
+    }
+
+    #right>input {
+      margin-left: 50px;
+      padding: 5px;
+    }
+
+    #right>button {
+      margin-top: 5px;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: #0069d9;
+      border-radius: 5px;
+
+      cursor: pointer;
+    }
+
+    #two>div {
+      border: 1px #dddddd solid;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    #two>span {
+      /* border-bottom:1px solid red;*/
+      text-decoration: underline;
+
+      /* max-width: 900vmax; */
+    }
+
+    .qh4 {
+      color: #77737f;
+    }
+
+    .qdiv {
+      overflow: hidden;
+      width: 80%;
+      margin-left: 60px;
+      padding: 10px;
+      background-color: whitesmoke;
+
+      margin-bottom: 15px;
+    }
+
+    .qdiv>p {
+      margin: 0px;
+      margin-bottom: 7px;
+    }
+
+    .qp {
+      font-size: 1.6rem;
+      font-weight: 550;
+    }
+
+    .qbutton {
+      background-color: #007bff;
+      color: white;
+      border: #0069d9;
+      border-radius: 5px;
+      cursor: pointer;
+      padding: 10px;
+      margin-left: 480px;
+    }
+
+    .button1 {
+      background-color: #007bff;
+      color: white;
+      border: #0069d9;
+      border-radius: 5px;
+      cursor: pointer;
+      padding: 10px;
+      margin-left: 10px;
+    }
+
+    #resove {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      margin-left: 50px;
+    }
+
+    #resove>label {
+      font-size: 1.3rem;
+      color: #77737f;
+      font-weight: bold;
+    }
+
+    h5 {
+      margin-left: 50px;
+      margin-bottom: 5px;
+      font-size: 15px;
+    }
+
+    /*#comments-section{
+        margin-left: 50px;
+        border: 1px solid #dddddd;
+        background-color: #f5f5f5;
+        width: 90%;
+        padding: 10px;
+      }*/
+    button {
+      margin-left: 520px;
+      padding: 10px;
+      background-color: #007bff;
+      color: #f5f5f5;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    #comments-section div {
+      background-color: #f5f5f5;
+      width: 80%;
+      margin-left: 50px;
+      padding: 20px;
+      border: 1px solid #d6d6d6;
+    }
+    .svg-inline--fa {
+    /* display: var(--fa-display,inline-block); */
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+    margin-left: 480px;
+    display: flex;
+}
+   
+  </style>
+</head>
+
+<body>
+  <div id="first"><label id="lb">Discussion Portal</label></div>
+  <div id="second">
+    <div id="left">
+      <div id="one">
+        <button type="button" id="new">New Question form</button>
+        <input type="search" id="find" onkeyup="search_animal()" placeholder="Search Questions..." />
+      </div>
+      <div id="two"></div>
+    </div>
+    <section id="right-section">
+      <div id="right">
+        <div id="resovee"></div>
+      </div>
+      <div id="comments-section"></div>
+    </section>
+  </div>
+  <footer>
+    <script src="sample.js"></script>
+    <script src="icons/js/all.min.js"></script>
+    <script src="https://kit.fontawesome.com/001b7e2bcb.js" crossorigin="anonymous"></script>
+  </footer>
+</body>
+
+</html>
